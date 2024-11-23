@@ -1,0 +1,22 @@
+version: "3"
+services:
+  app1:
+    build: .
+    environment:
+      - APP_NAME=App1
+    ports:
+      - "4002:4002"
+
+  app2:
+    build: .
+    environment:
+      - APP_NAME=App2
+    ports:
+      - "4003:4002"
+
+  app3:
+    build: .
+    environment:
+      - APP_NAME=App3
+    ports:
+      - "4004:4002"
